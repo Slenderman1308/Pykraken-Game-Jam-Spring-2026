@@ -1,4 +1,4 @@
-from FSM import FSM, StateType
+from GameStates.FSM import FSM, StateType
 import pykraken as kn
 
 class MenuState(StateType):
