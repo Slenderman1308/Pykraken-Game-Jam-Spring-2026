@@ -3,7 +3,6 @@ from abc import ABC
 from typing import Callable, Dict, Any
 import pykraken as kn
  
- 
 class StateType(ABC):
     def handle_event(self, event: kn.Event) -> None:
         pass

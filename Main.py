@@ -1,11 +1,12 @@
-import pykraken as kn
 from GameStates.FSM import FSM
 from GameStates.LevelState import LevelState
 from GameStates.MenuState import MenuState
+from Assets.Constants import WIN_WIDTH, WIN_HEIGHT
+import pykraken as kn
 
 class Root:
     def __init__(self) -> None:
-        kn.window.create("Game", 800, 600)
+        kn.window.create("Game", WIN_WIDTH, WIN_HEIGHT)
         kn.time.set_target(60)
 
         # 1. Teach the FSM what "level" and "menu" mean
